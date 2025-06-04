@@ -1,0 +1,90 @@
+
+/* ========== TEXT ========== */
+body {
+    font-family: "IBMPlexSans", sans-serif;
+    font-weight: 400;
+    color: var(--neutral-500);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    /* margin: 0; */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: dotted;
+}
+
+.superscript {
+    font-feature-settings: 'sups' on;
+    font-family: Inconsolata;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--neutral-400);
+}
+
+.opener {
+    max-width: 42.5rem;
+    font-size: 1.75rem;
+    line-height: 2.3rem;
+    margin: 1rem 0;
+
+}
+.job {
+    /* Large Subtext */
+    font-family: "Inconsolata",sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--neutral-400);
+}
+
+
+/* icons */
+:root {
+    --l-x-icon: -0.375rem;
+    --l-y-icon: -0.125rem;
+    --x-icon: 0rem;
+    --y-icon: -0.125rem;
+
+}
+
+.icon-container {
+    width: 0.625rem;
+    height: 0.625rem;
+}
+
+.ext-icon-move:hover, .ext-icon-move:focus, .ext-icon-move:active {
+    --x-icon: 0.125rem;
+    --y-icon: -0.25rem;
+}
+
+.l-ext-icon-move:hover, .l-ext-icon-move:focus, .l-ext-icon-move:active {
+    --l-x-icon: -0.125rem;
+    --l-y-icon: -0.25rem;
+}
+
+.icon-loc {
+    transform: translate(var(--x-icon), var(--y-icon));
+}
+
+.l-icon-loc {
+    transform: translate(var(--l-x-icon), var(--l-y-icon));
+}

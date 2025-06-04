@@ -1,0 +1,144 @@
+:root {
+    --neutral-100: #F7F6F4;
+    --neutral-200: #EAE9E7;
+    --neutral-300: #C3C5C7;
+    --neutral-400: #696D72;
+    --neutral-500: #212529;
+
+    --blue: #044ADA;
+    --red: #DA1E27;
+    --green: #028324;
+    --pink: #D00084;
+    --orange: #E86A10;
+    --purple: #570dd8;
+    --yellow: #f3b406;
+
+    --base: var(--neutral-100);
+
+    --link: var(--neutral-400);
+    --name: var(--neutral-500);
+    --bclc: var(--neutral-400);
+    
+    --linkedin: var(--neutral-400);
+    --email: var(--neutral-400);
+
+    --swiss: var(--neutral-500);
+
+    /* --green: #038301; */
+    /* --light-green: #ECF8EC; */
+    /* --light-orange: #edd7ca; */
+    /* --bl-top: #170202; */
+    /* --encore: #170202; */
+    /* --hot-stuff: #170202; */
+    --spin-deg: 0deg;
+}
+/* highlight */
+::-moz-selection {
+    color: var(--neutral-100);
+    background: var(--blue);
+}
+::selection {
+    color: var(--neutral-100);
+    background: var(--blue);
+} 
+/* star */
+.star-shape {
+    fill: var(--name);
+    /* transform: translateY(-1rem); */
+    /* center of element */
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: 5s linear infinite star-rotate;
+}
+.star {
+    fill: none;
+    transform: translateY(-0.5rem);
+    padding: 0.2rem 0.1rem;
+}
+/* changing colours */
+.name {
+    color: var(--name);
+    text-decoration: none;
+}
+.name:hover, .name:focus, .name:active {
+    --name: var(--pink);
+    --spin-deg: 360deg;
+}
+@keyframes star-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(var(--spin-deg));
+    }
+}
+
+.swiss {
+    color: var(--swiss);
+}
+.swiss:hover, .bclc:focus, .bclc:active {
+    --swiss: var(--green);
+}
+
+.bclc {
+    --link: var(--bclc);
+    color: var(--bclc);
+    fill: var(--bclc);
+}
+.bclc:hover, .bclc:focus, .bclc:active {
+    --bclc: var(--orange);
+    /* text-decoration: none;
+    transition: .3s ease; */
+    border-bottom: 0.125rem dotted transparent;
+}
+
+
+.email {
+    --link: var(--email);
+    color: var(--email);
+    fill: var(--email);
+}
+
+.email:hover, .email:focus, .email:active {
+    --email: var(--yellow);
+    border-bottom: 0.125rem  dotted transparent;
+}
+
+.linkedin {
+    --link: var(--linkedin);
+    color: var(--linkedin);
+    fill: var(--linkedin);
+}
+.linkedin:hover, .linkedin:focus, .linkedin:active {
+    --linkedin: var(--blue);
+    border-bottom: 0.125rem  dotted transparent;
+}
+
+.ext-link {
+    /* text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 0.125rem;
+    text-underline-offset: 0.2em;
+    padding: 0.75rem 0.2rem; */
+    /* border-bottom: 2px dotted var(--bclc); */
+
+    text-decoration: none;
+    border-bottom: 0.125rem dotted var(--link);
+    transition: border-color .3s ease;
+}
+
+body {
+    background-color: var(--base);
+}
+
+/* .swiss:hover, .swiss:focus, .swiss:active {
+    --base: red;
+}
+
+.background-switch {
+    
+} */
