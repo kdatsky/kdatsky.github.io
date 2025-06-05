@@ -76,12 +76,7 @@
     }
 }
 
-.swiss {
-    color: var(--swiss);
-}
-.swiss:hover, .bclc:focus, .bclc:active {
-    --swiss: var(--green);
-}
+
 
 .bclc {
     --link: var(--bclc);
@@ -135,10 +130,3 @@ body {
     background-color: var(--base);
 }
 
-/* .swiss:hover, .swiss:focus, .swiss:active {
-    --base: red;
-}
-
-.background-switch {
-    
-} */
