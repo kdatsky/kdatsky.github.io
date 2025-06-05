@@ -29,7 +29,8 @@ a:hover, a:focus, a:active {
     text-decoration: dotted;
 }
 
-.superscript {
+
+/* .superscript {
     font-feature-settings: 'sups' on;
     font-family: Inconsolata;
     font-size: 1rem;
@@ -37,7 +38,7 @@ a:hover, a:focus, a:active {
     font-weight: 400;
     line-height: 2rem;
     color: var(--neutral-400);
-}
+} */
 
 .opener {
     max-width: 42.5rem;

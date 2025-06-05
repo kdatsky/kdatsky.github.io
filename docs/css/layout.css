@@ -47,9 +47,15 @@ footer {
     /* two rows */
 }
 
-.no-underline {
-    text-decoration: none;
+.proj-card-link {
+    color: var(--neutral-500);
 }
+
+
+.proj-card-link:hover .card-title {
+    text-decoration: underline dotted;
+}
+
 
 .card-num {
     font-family: "Inconsolata",sans-serif;
@@ -61,7 +67,7 @@ footer {
 }
 
 .card-title:hover {
-    text-decoration: dotted;
+    /* text-decoration: dotted; */
     /* border-bottom: 0.125rem dotted var(--link);
     transition: border-color .3s ease; */
 }
@@ -135,4 +141,11 @@ footer {
     }
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
+.no-underline:hover {
+    text-decoration: none;
+}
 
