@@ -43,6 +43,7 @@ footer {
     align-items: flex-start;
     gap: 1.375rem;
     align-self: stretch;
+    color: var(--neutral-500);
 
     /* two rows */
 }
