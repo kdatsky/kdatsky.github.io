@@ -22,7 +22,8 @@
     --linkedin: var(--neutral-400);
     --email: var(--neutral-400);
 
-    --swiss: var(--neutral-500);
+    --encore: var(--neutral-500);
+    --a11y: var(--neutral-500);
 
     /* --green: #038301; */
     /* --light-green: #ECF8EC; */
@@ -76,6 +77,19 @@
     }
 }
 
+/* changing colours */
+.encore {
+    color: var(--encore);
+}
+.proj-card-link:hover .encore {
+    --encore: var(--purple);
+}
+.a11y {
+    color: var(--a11y);
+}
+.proj-card-link:hover .a11y {
+    --a11y: var(--blue);
+}
 
 
 .bclc {
