@@ -1,9 +1,67 @@
+/* ---------- beginning width ---------- */
 .container {
+    padding: 2rem 1.25rem;
+}
+
+.container-secondary {
+    background-color: var(--neutral-200);
+    margin-top: -0.25rem;
+    padding: 2rem 1.25rem;
+}
+
+.container-proj {
     padding: 2rem 1.25rem;
 }
 
 footer {
     padding: 2rem 1.25rem;
+}
+
+.grid {
+    display: grid;
+    column-gap: 1.25rem;
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 1.25rem; */
+}
+
+/* .two-rows {
+    grid-template-rows: repeat(1, 1fr);
+} */
+
+/* also in 900px */
+.outcome-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.prj-bullets {
+    display: flex;
+    flex-direction: column;
+    list-style-type: square;
+    gap: 0.5rem;
+
+    margin: 0.25rem 0;
+    padding-left: 1.75rem;
+    line-height: 1.5rem;
+
+    color: var(--neutral-450);
+}
+
+/* currently this is used to control work case study parapgraphs when screen gets smaller */
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom
+
+.grid-casestudy {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
 }
 
 .proj-list {
@@ -14,21 +72,181 @@ footer {
     align-items: flex-start;
     gap: 2.5rem;
     align-self: stretch;
-    border-top: 2px solid var(--neutral-500);
 }
 
 
-/* 768px */
+/* ---------- 768px <= ---------- */
 @media (min-width: 48rem) {
     .proj-list {
         gap: 6rem;
     }
 }
 
-/* 1024px*/
+/* ---------- 900px <= ---------- */
+@media (min-width: 56.25rem) {
+    .grid {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .two-col-1 {
+        grid-column: span 4 / span 4;
+    }
+
+    .two-col-2 {
+        grid-column: span 4 / span 4;
+        grid-column-start: 6;
+    }
+/* 
+    .four-col-1 {
+        grid-column: span 2 / span 2;
+    }
+
+    .four-col-2 {
+        grid-column: span 2 / span 2;
+        grid-column-start: 3;
+    }
+
+    .four-col-3 {
+        grid-column: span 2 / span 2;
+        grid-column-start: 5;
+    }
+
+    .four-col-4 {
+        grid-column: span 2 / span 2;
+        grid-column-start: 7;
+    } */
+
+
+    /* .two-rows {
+        grid-template-rows: repeat(2, 1fr);
+    } */
+
+    .casestudy-main {
+        /* grid-column: span 9 / span 9; */
+        grid-column: span 10 / span 10;
+        gap: 6rem;
+    }
+
+    .grid-casestudy {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        gap: 1.25rem;
+    }
+
+    .casestudy-h3 {
+        grid-column: span 2 / span 2;
+    }
+
+    .casestudy-body {
+        grid-column: span 7 / span 7;
+        grid-column-start: 3;
+    }
+
+    .casestudy-body-full {
+        grid-column: span 10 / span 10;
+        grid-column-start: 1;
+    }
+
+   
+    /* maybe delete */
+    .grid-outcome {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 1.25rem;
+    }
+    .grid-t1 {
+        grid-column: span 3 / span 3;
+        grid-column-start: 7;
+        grid-row-start: 1;
+    }
+
+    .grid-i1 {
+        grid-column: span 6 / span 6;
+        grid-row-start: 1;
+    }
+
+    .grid-t2 {
+        grid-column: span 3 / span 3;
+        grid-row-start: 1;
+    }
+
+    .grid-i2 {
+        grid-column: span 6 / span 6;
+        grid-column-start: 4;
+        grid-row-start: 1;
+    }
+
+
+    .grid-secondary-p1 {
+        grid-column: span 9 / span 9;
+        grid-row: span 2 / span 2;
+        max-width: 56.3125rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .grid-secondary-p2 {
+        grid-column: span 3 / span 3;
+        grid-column-start: 10;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+
+    .grid-secondary-p2-2 {
+        grid-column: span 2 / span 2;
+        grid-column-start: 11;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .grid-secondary-p3 {
+        grid-column: span 3 / span 3;
+        grid-column-start: 10;
+        grid-row-start: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .margin-top {
+        margin-top: 1rem;
+    }
+
+    /* repeat - also in not in 900px */
+    .outcome-list {
+        grid-column: span 9 / span 9;
+        gap: 3rem;
+    }
+
+    .outcome-list-row {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 1.25rem;
+    }
+}
+
+/* ---------- 1024px <= ---------- */
 @media (min-width: 64rem) {
     .container {
+        padding: 4rem 6rem 1.5rem;
+    }
+
+    .container-secondary {
         padding: 4rem 6rem;
+        margin-top: -0.25rem;
+    }
+
+    .container-proj {
+        padding-top: 1.75rem;
+        padding-bottom: 5rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
     }
 
     footer {
@@ -36,12 +254,17 @@ footer {
     }
 }
 
+/* ---------- 1280px <= ---------- */
+@media (min-width: 80rem) {
+
+}
+
 
 .proj-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.375rem;
+    /* gap: 1.375rem; */
     align-self: stretch;
     color: var(--neutral-500);
 
@@ -100,11 +323,11 @@ footer {
     width:100%;
     height: 100%;
     /* max-height: 36.625rem; */
-    border-radius: 1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     /* border-right:none;
     position: relative; */
-    border-radius: 0.75rem; 
+    border-radius: 0.5rem; 
+    border: 1px solid var(--neutral-300);
 }
 
 .two-columns {
@@ -150,3 +373,76 @@ footer {
     text-decoration: none;
 }
 
+
+
+
+/* img */
+.proj-overview-img {
+
+}
+
+
+
+/* extras */
+.no-margin {
+    margin: 0;
+}
+
+.margin-small {
+    margin: 0.25rem 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.no-padding-top {
+    padding-top: 0;
+}
+
+.margin-top-5 {
+    margin-top: 5rem;
+}
+
+.border-top {
+    border-top: 1px solid var(--neutral-500);
+}
+
+
+/* about layouts */
+@media (min-width: 48rem) {
+    .profile-img {
+        grid-column: span 4 / span 4;
+        grid-row: span 2 / span 2;
+        grid-column-start: 9;
+        grid-row-start: 1;
+    }
+    
+    .profile-desc {
+        grid-column: span 4 / span 4;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    
+    .profile-header {
+        grid-column: span 4 / span 4;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    
+        font-family: "IBMPlexSans";
+        font-size: 1.75rem;
+        font-style: normal;
+        /* font-weight: 500; */
+        line-height: normal;
+    
+        margin-bottom: 0;
+    }
+    
+    .two-rows {
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

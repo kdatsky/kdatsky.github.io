@@ -1,26 +1,28 @@
 :root {
     --neutral-100: #F7F6F4;
-    --neutral-200: #EAE9E7;
+    --neutral-200: #EBEAE6;
     --neutral-300: #C3C5C7;
     --neutral-400: #696D72;
+    --neutral-450: #373A3E;
     --neutral-500: #212529;
 
     --blue: #044ADA;
     --red: #DA1E27;
     --green: #028324;
-    --pink: #D00084;
+    --pink: #DB0075;
     --orange: #E86A10;
     --purple: #570dd8;
     --yellow: #f3b406;
+    --cyan: #23ccff;
 
     --base: var(--neutral-100);
 
-    --link: var(--neutral-400);
-    --name: var(--neutral-500);
-    --bclc: var(--neutral-400);
+    --link: var(--blue);
+    --name: var(--pink);
+    --bclc: var(--orange);
     
-    --linkedin: var(--neutral-400);
-    --email: var(--neutral-400);
+    --linkedin: var(--cyan);
+    --email: var(--yellow);
 
     --encore: var(--neutral-500);
     --a11y: var(--neutral-500);
@@ -36,11 +38,11 @@
 /* highlight */
 ::-moz-selection {
     color: var(--neutral-100);
-    background: var(--blue);
+    background: var(--pink);
 }
 ::selection {
     color: var(--neutral-100);
-    background: var(--blue);
+    background: var(--pink);
 } 
 /* star */
 .star-shape {
@@ -59,14 +61,21 @@
     transform: translateY(-0.5rem);
     padding: 0.2rem 0.1rem;
 }
+.sub-text {
+    color: var(--neutral-400);
+}
+
 /* changing colours */
 .name {
+    --link: var(--name);
     color: var(--name);
+    fill: var(--name);
     text-decoration: none;
 }
 .name:hover, .name:focus, .name:active {
-    --name: var(--pink);
+    /* --name: var(--neutral-500); */
     --spin-deg: 360deg;
+    border-bottom: 0.125rem  dotted transparent;
 }
 @keyframes star-rotate {
     0% {
@@ -98,7 +107,7 @@
     fill: var(--bclc);
 }
 .bclc:hover, .bclc:focus, .bclc:active {
-    --bclc: var(--orange);
+    /* --bclc: var(--neutral-400); */
     /* text-decoration: none;
     transition: .3s ease; */
     border-bottom: 0.125rem dotted transparent;
@@ -112,7 +121,18 @@
 }
 
 .email:hover, .email:focus, .email:active {
-    --email: var(--yellow);
+    /* --email: var(--neutral-400); */
+    border-bottom: 0.125rem  dotted transparent;
+}
+
+.purple-link {
+    --link: var(--purple);
+    color: var(--purple);
+    fill: var(--purple);
+}
+
+.purple-link:hover, .purple-link:focus, .purple-link:active {
+    /* --email: var(--neutral-400); */
     border-bottom: 0.125rem  dotted transparent;
 }
 
@@ -122,9 +142,33 @@
     fill: var(--linkedin);
 }
 .linkedin:hover, .linkedin:focus, .linkedin:active {
-    --linkedin: var(--blue);
+    /* --linkedin: var(--neutral-400); */
     border-bottom: 0.125rem  dotted transparent;
 }
+
+.blue-link {
+    --link: var(--blue);
+    color: var(--blue);
+    fill: var(--blue);
+    /* text-decoration: none;
+    border-bottom: 0.125rem dotted var(--blue);
+    transition: border-color .3s ease; */
+}
+
+.blue-link:hover, .blue-link:focus, .blue-link:active{
+    border-bottom: 0.125rem  dotted transparent;
+}
+
+/* .purple-link {
+    color: var(--purple);
+    text-decoration: none;
+    border-bottom: 0.125rem dotted var(--purple);
+    transition: border-color .3s ease;
+}
+
+.purple-link:hover, .purple-link:focus, .purple-link:active{
+    border-bottom: 0.125rem  dotted transparent;
+} */
 
 .ext-link {
     /* text-decoration-line: underline;
@@ -138,6 +182,7 @@
     text-decoration: none;
     border-bottom: 0.125rem dotted var(--link);
     transition: border-color .3s ease;
+
 }
 
 body {

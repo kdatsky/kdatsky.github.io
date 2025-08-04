@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>A11y Design Checklist</title>
+		<title>Kathy Datsky - Accessibility</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/font.css">	
         <link rel="stylesheet" href="css/colour.css">	
@@ -17,7 +17,7 @@
 
     <body class=".background-switch">
         <a href="#main" class="skip-btn">Skip to Content.</a>
-        <header class="nav-container">
+        <header id="top" class="nav-container">
 			<nav aria-label="Primary" class="nav-list">
                 <a class="nav-button" href="index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
@@ -31,25 +31,192 @@
         </header>
 
         <main id="main">
-           
+            <!-- intro -->
+            <section class="container-proj">
+                <h1>BCLC Design Accessibility Figma Checklist</h1>
+                <p class="proj-caption">Internal Tool</p>
+                <div class="grid margin-top-5">
+                    <div class="grid-secondary-p1">
+                        <p class="statement-txt">69% of people with disabilities reported leaving websites they found difficult to use.</p>
+                        <p>(2019 Report from <a class="blue-link ext-link" href="https://clickawaypound.com/downloads/cap19final0502.pdf" target="_blank">Click-Away Pound</a>)</p>
+                    </div>
+                    <div class="grid-secondary-p2">
+                        <p class="no-margin">As designers, we hold the power to make our products more inclusive from the start by considering the full diversity of human experiences, pushing for accessibility earlier in projects, including accessibility best practices in our designs, and advocating for accessibility features.</p>
+                    </div>
+               </div>
+            </section>
+            <!-- overview -->
+            <section>
+                <!-- !!! fix img !!! -->
+                <div class="proj-overview-img">
+                    <img src="img/overview-a11y.png" alt="Smiling woman with brown hair with bangs and glasses standing in field surrounded by mountains and lake. " style="width:100%;height:auto;">
+                </div>
+                <!-- proj tldr -->
+                <div class="container-secondary grid">
+                    <div class="grid-secondary-p1">
+                        <h2 class="small-header no-margin">TL;DR</h2>
+                        <p class="no-margin med-body">An internal Figma component that helps designers integrate accessibility throughout the design process by providing a standardized set of principles to conform to Web Content Accessibility Guidelines (WCAG) 2.0 and 2.1 level AA, and aid advocating for player needs when collaborating with stakeholders and developers, to deliver more inclusive, accessible digital products.</p>
+                    </div>
+                    <div class="grid-secondary-p2-2">
+                        <ul class="prj-over">
+                            <li>
+                                <p class="small-header no-margin">Contributions</p>
+                                <p class="no-margin small-text">User Experience, Research, Accessibility, Prototyping, Component Design</p>
+                            </li>
+                            <li>
+                                <p class="small-header no-margin">Tools</p>
+                                <p class="no-margin small-text">Figma, Excel, Confluence, JIRA</p>
+                            </li>
+                            <li>
+                                <p class="small-header no-margin">Team</p>
+                                <p class="no-margin small-text">Kathy Datsky, UX Manager</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>         
+            <!-- main case study -->
+            <div class="grid">
+                <!-- the catalyst -->
+                <section class="container casestudy-main">
+                    <h2>The Catalyst: Identifying the Need for Accessible Design</h2>
+                    <div class="border-top grid-casestudy">
+                        <h3 class="casestudy-h3 no-margin-bottom ">For the User:<br>It is part of the human experience.</h3>
+                        <div class="casestudy-body no-margin-bottom">
+                            <p class="margin-top">Everyone will be impacted by disability and or inaccessibility at some point in their life, whether it’s permanent, temporary, or situational. The population of those with a disability is growing, as reflected in <a class="blue-link ext-link" href="https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2023063-eng.htm" target="_blank">Statistics Canada’s 2022 report</a>, which reveals that 27% of Canadians aged 15 and older live with at least one disability, a 4.7% increase from 2017.</p>
+                            <img class="proj-img" src="img/spectrum-of-limitations.jpg" alt="" style="width:100%;height:auto;">
+                            <p>When digital products aren’t designed with accessibility in mind, they can become barriers rather than tools. By considering the full diversity of human experiences and building websites to accommodate assistive tools for people with visual, physical, hearing, cognitive or learning impairments, we help create equitable, meaningful experiences for everyone. <em>Good accessibility benefits all people, not just those with disabilities.</em></p>
+                        </div>
+                        <h3 class="casestudy-h3 no-margin-bottom">For the Business:<br>Legislation, Time, and Resources.</h3>
+                        <div class="casestudy-body no-margin-bottom">
+                            <p class="margin-top">In part with the legislative requirement, <a class="blue-link ext-link" href="https://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/accessibility/legislation" target="_blank">The Accessible BC Act</a>, BCLC set off on a 5-year accessibility transformation, in which one of the five priority target areas identified to have an impact being ‘Communications and Technology’, striving to conform to WCAG 2.0 level AA.</p>
+                            <p>Through an audit of over 120 key pages across 5 BCLC’s websites and 1 mobile app, it was identified that there were <em>significant accessibility issues</em>. This wasn’t a surprise for the organization as the products weren’t designed with accessibility as a priority. If issues were caught earlier on, before going live, the organization could’ve saved on time, money, and resources to fix the inaccessibility problems.</p>
+                        </div>
+                        <h3 class="casestudy-h3 no-margin-bottom">For the Designer:<br>Defining a language for advocating</h3>
+                        <div class="casestudy-body no-margin-bottom">
+                            <p class="margin-top">UX Designers strive to champion the users needs within the project scope, but it can be difficult within cross-functional teams as there can be different priorities and languages being used. Being able to define a set of standards as a team they would be delivering across the organization, and having a tool to aid designers in advocating within cross-functional team was important for the UX manager and the rest of the UX team to be able to support the organizations accessibility multi-year plan.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- the scope -->
+                <section class="container no-padding-top casestudy-main">
+                    <h2>The Scope: Defining the Needs</h2>
+                    <div class="border-top grid-casestudy">
+                        <h3 class="casestudy-h3 no-margin-bottom ">How might we...</h3>
+                        <div class="casestudy-body no-margin-bottom">
+                            <p class="med-body">help designers easily discover and integrate standardized accessibility requirements into their process, and enable effective communication within cross-functional teams across projects to deliver equitable, meaningful experience for all players?</p>
+                            <p>How do you embed accessibility into your technical work when you don’t have the lived experience? For BCLC’s UX Team, this meant re-looking at their design process. As the lead designer, I defined a standardized set of accessibility principles for the team to ensure are implemented during their design process that accommodates their players, including those facing situational challenges, as well as visual, physical, hearing, cognitive or learning impairments. The following is one facet the UX team implemented to produce accessible experiences.</p>
+                        </div>
 
+                    </div>
+                </section>
+                <!-- the solution -->
+                <section class="container no-padding-top casestudy-main">
+                    <h2>The Solution: Making Accessibility Seamless for Every Project</h2>
+                    <div class="border-top grid-casestudy">
+                        <div class="casestudy-body no-margin-bottom">
+                            <p>The goal is to provide designers a tool to improve the experience for all their players by addressing key accessibility issues. It’s faster and more cost-effective to resolve accessibility issues in the beginning during the design phase of a product or feature. Defining a standardized set of principles the UX team can implement into their design process provides transparency and accountability to each other, across different product teams, as well as saves time, energy, and money by having products designed with accessibility in mind the first time.</p>
+                        </div>
+                        <ul class="outcome-list">
+                            <!-- 01 embedded -->
+                            <li class="outcome-list-row">
+                                <div class="grid-t1">
+                                    <p class="med-body no-margin-bottom ">Embedded in the designs</p>
+                                    <p class="no-margin-top">As a figma component, designers are able to integrate the checklist into their final design file for handoff.</p>
+                                </div>
+                                <video loop playsinline controls autoplay muted class="grid-i1 card-vid">
+                                    <source src="../docs/vid/a11y-01-embedded.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </li>
+                            <!-- 02 tailored -->
+                            <li class="outcome-list-row">
+                                <div class="grid-t2">
+                                    <p class="med-body no-margin-bottom">Tailored to each project</p>
+                                    <p class="no-margin-top">Using booleans, designers can show parts of the checklist that applicable to their designs.</p>
+                                </div>
+                                <video loop playsinline controls autoplay muted class="grid-i1 card-vid">
+                                    <source src="../docs/vid/a11y-02-tailored.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </li>
+                            <!-- 03 language -->
+                            <li class="outcome-list-row">
+                                <div class="grid-t1">
+                                    <p class="med-body no-margin-bottom">Common Language</p>
+                                    <p class="no-margin-top">Guidelines provide a common understanding and language for the accessibility work and requirements between the UX team, stakeholders and product teams.</p>
+                                </div>
+                                <video loop playsinline controls autoplay muted class="grid-i1 card-vid">
+                                    <source src="../docs/vid/a11y-03-language.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </li>
+                            <!-- 04 transparent -->
+                            <li class="outcome-list-row">
+                                <div class="grid-t2">
+                                    <p class="med-body no-margin-bottom">Transparent communication</p>
+                                    <p class="no-margin-top">If developers need to assume, it might effect the experience for designers. Designers should own designing the whole experience of users, not just the visuals. This includes audible and keyboard.</p>
+                                </div>
+                                <video loop playsinline controls autoplay muted class="grid-i1 card-vid">
+                                    <source src="../docs/vid/a11y-04-transparent.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </li>
+                            <!-- 05 educational -->
+                            <li class="outcome-list-row">
+                                <div class="grid-t1">
+                                    <p class="med-body no-margin-bottom">Educational</p>
+                                    <p class="no-margin-top">Provides resources to share with stakeholders and product teams, or give designers a refresher on the standard.</p>
+                                </div>
+                                <video loop playsinline controls autoplay muted class="grid-i1 card-vid">
+                                    <source src="../docs/vid/a11y-05-educational.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <!-- <img class="grid-i1" src="img/gray.png" alt="" style="width:100%;height:auto;"> -->
+                            </li>
+                            <!-- 06 adapt -->
+                            <li class="outcome-list-row">
+                                <div class="grid-t2">
+                                    <p class="med-body no-margin-bottom">Ability to adapt and grow</p>
+                                    <p class="no-margin-top">As the team uses the component, learn from their players, and accessibility standards change, the component is able to change and grow.</p>
+                                </div>
+                                <video loop playsinline controls autoplay muted class="grid-i1 card-vid">
+                                    <source src="../docs/vid/a11y-06-adapt.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </section>
+                <!-- the reflection -->
+            </div>         
+            <!-- to top -->
+            <section class="container other-projects-div-r">
+                <a href="#top" class="up-icon-move blue-link"><span class="blue-link ext-link">Back to the Top</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" class="icon-container-sec icon-loc" aria-hidden="true">
+                        <path d="M6.82801 0.569001L11.9825 5.69001L12.5515 6.25901L11.4135 7.39701L10.8445 6.82801L7.06231 3.0793L7.06231 13L5.45572 13L5.45572 3.0793L1.138 7.39701L-2.94658e-07 6.25901L6.25901 -2.7359e-07L6.82801 0.569001Z"/>
+                    </svg>
+                </a>
+        </section>
         </main>
         <footer>
-            <div class="footer">
-                <div>
-                    <p class="w-medium">Thank you for stopping by!</p>
-                    <p>Don’t be a stranger, let’s chat over coffee. </p>
+            <div>
+                <div class="contact">
+                    <p>Say Hello!</p>
                     <ul class="foot-list">
-                        <li><a href="https://www.linkedin.com/in/kathydatsky/" target="_blank" class="ext-icon-move linkedin"><span class="linkedin ext-link">Linkedin</span>
+                        <li><a href="mailto:kdatsky@gmail.com" class="ext-icon-move email"><span class="email ext-link">Email</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11" class="icon-container icon-loc" aria-hidden="true">
                                     <path d="M10.6182 1.69678L10.6418 8.96265V9.76734L9.03247 9.76734V8.96265L9.0088 3.6375L1.99381 10.6525L0.857774 9.51647L7.87277 2.50147L1.7666 2.50147L1.7666 0.892092L10.6182 0.892093L10.6182 1.69678Z"/></svg></a></li>
-                        <li>
-                            <a href="mailto:kdatsky@gmail.com" class="ext-icon-move email"><span class="email ext-link">Email</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11" class="icon-container icon-loc" aria-hidden="true">
-                                    <path d="M10.6182 1.69678L10.6418 8.96265V9.76734L9.03247 9.76734V8.96265L9.0088 3.6375L1.99381 10.6525L0.857774 9.51647L7.87277 2.50147L1.7666 2.50147L1.7666 0.892092L10.6182 0.892093L10.6182 1.69678Z"/></svg></a>
+                        <li><a href="https://www.linkedin.com/in/kathydatsky/" target="_blank" class="ext-icon-move linkedin"><span class="linkedin ext-link">Linkedin</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11" class="icon-container icon-loc" aria-hidden="true">
+                                <path d="M10.6182 1.69678L10.6418 8.96265V9.76734L9.03247 9.76734V8.96265L9.0088 3.6375L1.99381 10.6525L0.857774 9.51647L7.87277 2.50147L1.7666 2.50147L1.7666 0.892092L10.6182 0.892093L10.6182 1.69678Z"/></svg></a></li>
                     </ul>
                 </div>
-                <p>Designed and Coded by Kathy Datsky © 2025</p>
+                <div class="footer">
+                    <p class="location">Based in Vancouver, BC.</p>
+                    <p class="copyright">Kathy Datsky © 2025</p>
+                </div>
             </div>
         </footer>
     </body>

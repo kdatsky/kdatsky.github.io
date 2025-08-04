@@ -28,6 +28,13 @@
     font-style: normal;
     src: url('../font/Inconsolata-Regular.woff') format('woff');
 }
+/* medium */
+@font-face {
+    font-family: 'Inconsolata';
+    font-weight: 500; 
+    font-style: normal;
+    src: url('../font/Inconsolata-Medium.woff') format('woff');
+}
 
 .w-medium {
     font-weight: 500;
