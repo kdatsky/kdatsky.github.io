@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Kathy Datsky - Encore Rewards</title>
-        <link rel="icon" type="image/x-icon" href="../docs/img/favicon.png">
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/font.css">	
         <link rel="stylesheet" href="css/colour.css">	
@@ -127,25 +127,25 @@
                         <p class="no-margin-top casestudy-body-full">To solve this, the Encore Rewards team strived to digitize the loyalty program to allow cardless play at land-based casinos, with first implementing cardless sign-in on slot machines. To go along with the initiative, I was tasked with optimizing <a class="purple-link ext-link" href="https://www.casinosbc.com/" target="_blank">CasinosBC.com</a>. To better understand and help define the project's needs before designing, I interviewed colleagues on the Loyalty team and the Senior Designer in charge of the slot machine iView screen designs. This helped clarify the problem and uncover project limitations.</p>
                     </div>
                     <!-- make as a list in future -->
-                    <div class="grid-casestudy">
+                    <div class="grid-casestudy add-margin-top">
                         <!-- 1 -->
                         <div class="two-col-1">
-                            <h3 class="casestudy-h3 no-margin-bottom">Incomplete Member Data</h3>
+                            <p class="med-body no-margin-bottom">Incomplete Member Data</p>
                             <p class="margin-small">Phone numbers, which are used as the cardless play number, aren’t required during loyalty program registration; meaning, data may be missing or outdated. This created a risk in transitioning and enrolling members to cardless play.</p>
                         </div>
                         <!-- 2-->
                         <div class="two-col-2">
-                            <h3 class="casestudy-h3 no-margin-bottom">Outdated Backend Systems</h3>
+                            <p class="med-body no-margin-bottom">Outdated Backend Systems</p>
                             <p class="margin-small">Although the cardless number is the member's phone number, the system had to store them as separate fields, preventing seamless integration and increasing the risk for data inconsistencies.</p>
                         </div>
                         <!-- 3 -->
                         <div class="two-col-1">
-                            <h3 class="casestudy-h3 no-margin-bottom">​​Operational Dependency</h3>
+                            <p class="med-body no-margin-bottom">​​Operational Dependency</p>
                             <p class="margin-small">On-site events hosted by service providers required manual verification of loyalty cards for prize claims, creating a dependency for physical cards.</p>
                         </div>
                         <!-- 4 -->
                         <div class="two-col-2">
-                            <h3 class="casestudy-h3 no-margin-bottom">Scalability for Technology</h3>
+                            <p class="med-body no-margin-bottom">Scalability for Technology</p>
                             <p class="margin-small">Designs had to anticipate future capabilities and system updates, requiring flexible components and flows that could evolve with the technology.</p>
                         </div>
                     </div>
@@ -154,9 +154,61 @@
                 <section class="container casestudy-main">
                     <h2>Solution</h2>
                     <div class="border-top grid-casestudy">
-                        <p class="large-body casestudy-body-full">Optimize CasinosBC.com and Create a Digital Card.</p>
-                        <p class="no-margin-top casestudy-body-full">Through an audit of the website, a competitive analysis of other loyalty programs in and outside the gambling environment, and internal interviews, I identified 2 opportunities to make it easier and quicker for members to take advantage of cardless play.</p>
+                        <p class="add-padding-top casestudy-body-half">Through an audit and heuristic evaluation of the website, a competitive analysis of other loyalty programs in and outside the gambling environment, and internal interviews, I identified 2 opportunities to make it easier and quicker for members to take advantage of cardless play.</p>
                     </div>
+                    <!-- op 1 -->
+                    <div class="add-padding-top add-padding-bottom">
+                        <h3 class="grey-heading">01. Account Dropdown Menu</h3>
+                        <p class="large-body casestudy-body-full no-margin-top">Quick access to new digital card and account information.</p>
+                        <div class="grid-4x4">
+                            <video loop playsinline controls autoplay muted class="grid-4x4-1 card-vid lightpink-background">
+                                <source src="vid/encore-walkthrough.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <img src="img/encore-mobile-navigation.png" class="grid-4x4-2 card-vid" alt="Smiling woman with brown hair with bangs and glasses standing in field surrounded by mountains and lake. " style="width:100%;height:fill;">
+                            <div class="grid-4x4-3">
+                                <p class="no-margin-bottom"><b>Outcome</b></p>
+                                <ul class="prj-bullets">
+                                    <li>Streamlined access to account information across website, reducing friction and supporting self-serve account management.</li>
+                                    <li>Introduced a digital Encore Rewards card to support the shift away from physical cards.</li>
+                                    <li>Enabled digital card downloads for seamless access to exclusive casino events without needing a physical card.</li>
+                                    <li>Adaptable to future loyalty program enhancements.</li>
+                                </ul>
+                            </div>
+                            <div class="grid-4x4-4">
+                                <p class="no-margin-bottom"><b>Pain Points Solved</b></p>
+                                <ul class="prj-bullets">
+                                    <li>Loyalty members faced high cognitive load when trying to access their account details, as they had to remember where specific information was located.</li>
+                                    <li>Deviated from common design patterns used by competitors, who prioritized persistent, intuitive access to account details that enabled self-management.</li>
+                                    <li>Existing design did not allow to showcase the loyalty program’s shift toward a more modern, digital experience.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <img src="img/gray.png" class="casestudy-body-full" alt="Smiling woman with brown hair with bangs and glasses standing in field surrounded by mountains and lake. " style="width:100%;height:auto;"> -->
+                    </div>
+                    <!-- op 2 -->
+                    <div class="add-padding-top">
+                        <h3 class="grey-heading">02. Reorganized Account Settings</h3>
+                        <p class="large-body casestudy-body-full no-margin-top">Simplified account management and raised awareness of the cardless play option.</p>
+                        <!-- note -->
+                        <div class="message-bar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path d="M10.3594 7.53125C10.1094 7.53125 9.85938 7.5625 9.60938 7.625L7.01562 5.03125C7.01562 4.78125 7.01562 4.53125 7.04688 4.28125C7.32812 2.53125 8.67188 1.0625 10.4219 0.65625C11.1719 0.46875 11.8906 0.46875 12.5469 0.625C12.8906 0.71875 13.0156 1.15625 12.7656 1.40625L10.6094 3.5625V5.875H12.9531L15.1094 3.75C15.3594 3.5 15.7969 3.59375 15.8906 3.9375C16.0469 4.59375 16.0469 5.34375 15.8594 6.09375C15.5469 7.4375 14.5781 8.53125 13.3281 9.09375L12.7031 8.5C12.0781 7.875 11.2656 7.53125 10.3594 7.53125ZM12.0156 9.21875L15.6719 12.8125C16.1094 13.2812 16.1094 14.0312 15.6719 14.4688L14.0156 16.125C13.5469 16.5625 12.8281 16.5625 12.3594 16.125L8.70312 12.4688C7.98438 11.75 7.85938 10.6562 8.26562 9.78125L4.95312 6.46875H3.01562L0.015625 2.5L2.01562 0.5L5.98438 3.5V5.4375L9.32812 8.78125C10.2031 8.375 11.2656 8.5 12.0156 9.21875ZM7.10938 10.0938C6.95312 10.8125 7.04688 11.5312 7.32812 12.1875L3.60938 15.9062C3.20312 16.3125 2.64062 16.5 2.10938 16.5C1.57812 16.5 1.01562 16.3125 0.609375 15.9062C-0.203125 15.0625 -0.203125 13.75 0.609375 12.9062L5.26562 8.25L7.10938 10.0938ZM2.01562 15.25C2.42188 15.25 2.76562 14.9375 2.76562 14.5C2.76562 14.0938 2.42188 13.75 2.01562 13.75C1.57812 13.75 1.26562 14.0938 1.26562 14.5C1.26562 14.9375 1.57812 15.25 2.01562 15.25Z" fill="#570DD8"/>
+                            </svg>
+                            <p>Currently in progress. Check back soon for the complete case study!</p>
+                        </div>
+                        <div class="grid-4x4">
+                            <div class="grid-4x4-3">
+                                <p class="no-margin-bottom"><b>Anticpated Outcome</b></p>
+                                <ul class="prj-bullets">
+                                    <li>Increased user engagement and empower to self-edit account information.</li>
+                                    <li>Improved conversion rate to cardless play by informing users how it works and how to opt-in.</li>
+                                    <li>Consolidated components to conform to the existing design system for visual and functional consistency.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+  
                 </section>
 
                 <!-- the reflection -->

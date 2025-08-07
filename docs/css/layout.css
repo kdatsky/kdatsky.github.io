@@ -56,7 +56,7 @@ footer {
     margin-top: 0;
 }
 
-.no-margin-bottom
+/* .no-margin-bottom */
 
 .grid-casestudy {
     display: grid;
@@ -74,6 +74,33 @@ footer {
     align-self: stretch;
 }
 
+.grid-4x4 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-rows: auto;
+    gap: 1.25rem;
+}
+    
+.grid-4x4-1 {
+    grid-column: span 6 / span 6;
+}
+
+.grid-4x4-2 {
+    grid-column: span 4 / span 4;
+    grid-column-start: 7;
+}
+
+.grid-4x4-3 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 2;
+}
+
+.grid-4x4-4 {
+    grid-column: span 5 / span 5;
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
 
 /* ---------- 768px <= ---------- */
 @media (min-width: 48rem) {
@@ -144,6 +171,11 @@ footer {
 
     .casestudy-body-full {
         grid-column: span 10 / span 10;
+        grid-column-start: 1;
+    }
+
+    .casestudy-body-half {
+        grid-column: span 5 / span 5;
         grid-column-start: 1;
     }
 
@@ -383,7 +415,7 @@ footer {
 
 
 
-/* extras */
+/* ==================== extras ==================== */
 .no-margin {
     margin: 0;
 }
@@ -406,6 +438,14 @@ footer {
 
 .margin-top-5 {
     margin-top: 5rem;
+}
+
+.add-padding-top {
+    padding-top: 2.75rem;
+}
+
+.add-padding-bottom {
+    padding-bottom: 1.5rem;
 }
 
 .border-top {

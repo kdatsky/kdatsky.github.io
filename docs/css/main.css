@@ -27,6 +27,15 @@ h3 {
     line-height: 1.875rem; /* 136.364% */
 }
 
+h3.grey-heading {
+    color: var(--neutral-400);
+    font-family: "Inconsolata";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .small-header {
     font-family: "Inconsolata", sans-serif;
     font-size: 1rem;
@@ -186,4 +195,24 @@ line-height: normal; */
     gap: 1rem;
     padding: 0;
     margin: 0
+}
+
+.message-bar {
+    display: flex;
+    /* width: 65.625rem; */
+    padding: 1rem 1.5rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--purple);
+    background: rgba(87, 13, 216, 0.06);
+}
+
+.message-bar p {
+    color: var(--purple);
+    font-family: "Inconsolata";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

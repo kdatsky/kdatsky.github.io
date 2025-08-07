@@ -159,6 +159,10 @@
     border-bottom: 0.125rem  dotted transparent;
 }
 
+.lightpink-background {
+    background: #ffd6cf;
+}
+
 /* .purple-link {
     color: var(--purple);
     text-decoration: none;
