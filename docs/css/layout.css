@@ -261,6 +261,10 @@ footer {
         grid-template-rows: repeat(1, 1fr);
         column-gap: 1.25rem;
     }
+
+    .deux-col {
+        grid-column: span 2 / span 2;
+    }
 }
 
 /* ---------- 1024px <= ---------- */
