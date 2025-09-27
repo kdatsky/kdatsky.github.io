@@ -375,9 +375,10 @@ footer {
     /* margin-bottom: 1rem; */
     /* border-right:none;
     position: relative; */
-    border-radius: 0.5rem; 
+    border-radius: 0.25rem; 
     border: 1px solid var(--neutral-300);
 }
+
 
 .two-columns {
     display: grid;
